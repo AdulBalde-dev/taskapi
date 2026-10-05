@@ -1,0 +1,15 @@
+@app.get("/tasks/{task_id}")
+def get_task(task_id: int):
+
+/tasks/10 Path Parameter --> Usamos quando o parâmetro identifica um recurso específico.
+Quero a tarefa 10.
+
+######################
+
+@app.get("/tasks")
+def get_tasks(completed: bool):
+
+/tasks?completed=true Query Parameter --> Usamos para filtrar, pesquisar, ordenar ou modificar a consulta.
+Quero tarefas concluídas.
+
+/tasks?completed=true&priority=high passamos dois parametros
